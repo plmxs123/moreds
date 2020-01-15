@@ -1,0 +1,65 @@
+mysql1:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+    password_encrypted: false
+    driverClassName: com.mysql.jdbc.Driver
+    maxActive: 200
+    minIdle: 5
+    maxWait: 60000
+    poolPreparedStatements : true
+    testOnBorrow : false
+    testOnReturn : false
+    removeAbandoned : false
+    maxPoolPreparedStatementPerConnectionSize : 100
+    keepAlive : true
+    minEvictableIdleTimeMillis : 300000
+    validationQuery : "SELECT 'x' FROM DUAL"
+    testWhileIdle : false
+    filters : "stat"
+
+mysql2:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+    password_encrypted: false
+    driverClassName: com.mysql.jdbc.Driver
+    maxActive: 200
+    minIdle: 5
+    maxWait: 60000
+    poolPreparedStatements : true
+    testOnBorrow : false
+    testOnReturn : false
+    removeAbandoned : false
+    maxPoolPreparedStatementPerConnectionSize : 100
+    keepAlive : true
+    minEvictableIdleTimeMillis : 300000
+    validationQuery : "SELECT 'x' FROM DUAL"
+    testWhileIdle : false
+    filters : "stat"
+
+postgreSql:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://192.168.0.192:40003/?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: root
+    password_encrypted: false
+    driverClassName: org.postgresql.Driver
+    maxActive: 200
+    minIdle: 5
+    maxWait: 60000
+    poolPreparedStatements : true
+    testOnBorrow : false
+    testOnReturn : false
+    removeAbandoned : false
+    maxPoolPreparedStatementPerConnectionSize : 100
+    keepAlive : true
+    minEvictableIdleTimeMillis : 300000
+    validationQuery : "SELECT 'x'"
+    testWhileIdle : false
+    filters : "stat"
